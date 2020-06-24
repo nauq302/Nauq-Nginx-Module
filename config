@@ -1,0 +1,18 @@
+ngx_addon_name=ngx_http_nauq_module
+
+HTTP_MODULES="$HTTP_MODULES ngx_http_nauq_module"
+
+NGX_ADDON_SRCS="                                \
+    $NGX_ADDON_SRCS                             \
+    $ngx_addon_dir/ngx_http_nauq_module.c       \
+    $ngx_addon_dir/ngx_http_nauq_loc_conf.c     \
+    $ngx_addon_dir/ngx_http_nauq_helloWorld.c   \
+"
+
+NGX_ADDON_DEPS="                                \
+    $NGX_ADDON_DEPS                             \
+    $ngx_addon_dir/ngx_http_nauq_pch.h          \
+    $ngx_addon_dir/ngx_http_nauq_module.h       \
+    $ngx_addon_dir/ngx_http_nauq_loc_conf.h     \
+    $ngx_addon_dir/ngx_http_nauq_helloWorld.h   \
+"

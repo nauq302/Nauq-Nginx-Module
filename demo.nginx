@@ -1,0 +1,18 @@
+
+events {
+
+}
+
+http {
+
+    server {
+        server_name localhost;
+        listen 80;
+
+        location / {
+            nauq_helloWorld;
+        }
+    }
+}
+
+
