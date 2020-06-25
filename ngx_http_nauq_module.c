@@ -1,9 +1,13 @@
 #include "ngx_http_nauq_module.h"
 
 #include "ngx_http_nauq_helloWorld.h"
+#include "ngx_http_nauq_print.h"
+
+#include "ngx_http_nauq_loc_conf.h"
 
 ngx_command_t ngx_http_nauq_commands[] = {
         ngx_nauq_http_helloWorld_command,
+        ngx_nauq_http_print_command,
         ngx_null_command
 };
 
@@ -17,8 +21,8 @@ ngx_http_module_t ngx_http_nauq_module_ctx = {
         .create_srv_conf = NULL,
         .merge_srv_conf = NULL,
 
-        .create_loc_conf = NULL,
-        .merge_loc_conf = NULL
+        .create_loc_conf = ngx_http_nauq_create_loc_conf,
+        .merge_loc_conf = ngx_http_nauq_merge_loc_conf
 };
 
 

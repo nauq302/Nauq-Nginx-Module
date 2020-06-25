@@ -12,6 +12,6 @@
 #include <ngx_core.h>
 #include <ngx_http.h>
 
-#include "ngx_http_nauq_loc_conf.h"
+
 
 #endif //NGX_HTTP_NAUQ_MODULE_NGX_HTTP_NAUQ_PCH_H

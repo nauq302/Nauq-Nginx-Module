@@ -10,7 +10,7 @@ http {
         listen 80;
 
         location / {
-            nauq_helloWorld;
+            nauq_print "Ahihi";
         }
     }
 }
